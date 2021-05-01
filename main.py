@@ -10,7 +10,7 @@ path = fr"C:\Users\{pas}\Downloads"
 
 root = tk.Tk()
 root.geometry('400x200')
-root.title("Downloader")
+root.title("ImgDownloader")
 url_var = tk.StringVar()
 
 
@@ -31,5 +31,6 @@ ded = tk.Label(root, text='Enter Url :').place(x=40, y=60)
 inp = tk.Entry(root, width=40, textvariable=url_var).place(x=110, y=60)
 
 check = tk.Button(root, text="Download", width='25', command=down).place(x=90, y=100)
+ded = tk.Label(root, text=f'The Download Location is \n {path}').place(x=90, y=130)
 
 root.mainloop()
